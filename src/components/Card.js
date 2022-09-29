@@ -5,7 +5,6 @@ function Card({ title, children }) {
         <h1 className="font-bold text-xl">{title}</h1>
         {children}
         <p className='text-blue-500 mt-5'>Show more</p>
-        { }
       </div>
     </div>
   )

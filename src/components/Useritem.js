@@ -1,8 +1,14 @@
-function Useritem({User,user}) {
+
+
+function UserItem({ User, user, isAd}) {
     return (
-        <h1 className='font-bold'>{User}<br/>
-        <h2 className='text-gray-400'>{user}</h2>
-        </h1>
+        <div className="grow">
+            <h1 className='font-bold'>{User}</h1>
+            <h2 className='text-gray-400'>{user}</h2>
+            {
+                isAd && <h2 className='text-gray-400'>Promocionado</h2>
+            }
+        </div>
     )
 }
-export default Useritem;
+export default UserItem;

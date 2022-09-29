@@ -1,7 +1,6 @@
 import Navbar from './components/Navbar';
 import Card from "./components/Card";
-import Useritem from './components/Useritem';
-import ProfilePic from './components/ProfilePic';
+import RowWhoToFollow from './components/RowWhoToFollow';
 
 
 function App() {
@@ -19,12 +18,11 @@ function App() {
 
           </Card>
           <Card title={'Who to follow'} >
-            <ul className='flex space-x-4 p-3 text-xs'>
-              <ProfilePic Photo={'https://pbs.twimg.com/profile_images/1483096740588924931/MtXXBLR-_400x400.jpg'} />
-              <Useritem User={'Ramsesgt17'} user={'@Ramsesgt1708'} />
-              <button className='text-base rounded-full bg-black text-white h-10 w-20'>Follow</button>
-            </ul >
-            <ul className='flex space-x-4 p-3 text-xs'>
+            <RowWhoToFollow User='User 1' isAd={true}  />
+            <RowWhoToFollow User={'User 2'} showFollowButton={true} />
+            <RowWhoToFollow User='User 3' />
+            <RowWhoToFollow User='User 4' />
+            {/* <ul className='flex space-x-4 p-3 text-xs'>
               <ProfilePic Photo={'https://pbs.twimg.com/profile_images/1570046570170650624/0ScRNEBU_400x400.jpg'} />
               <Useritem User={'Shion Rosenthal'} user={'@ShionRosenthal'} />
               <button className='text-base rounded-full bg-black text-white h-10 w-20'>Follow</button>
@@ -33,9 +31,9 @@ function App() {
               <ProfilePic Photo={'https://pbs.twimg.com/profile_images/1451578083249688576/XLJ2h3SE_400x400.jpg'} />
               <Useritem User={'Lolweapon'} user={'@Lolweapon'} />
               <button className='text-base rounded-full bg-black text-white h-10 w-20'>Follow</button>
-            </ul >
+            </ul > */}
 
-            <Card title={'Qué esta pasando'}>
+            {/* <Card title={'Qué esta pasando'}>
               <ul>
                 <li>1</li>
                 <li>2</li>
@@ -48,7 +46,7 @@ function App() {
                 <li>5</li>
                 <li>6</li>
               </ul>
-            </Card>
+            </Card> */}
           </Card>
         </div>
       </div>
